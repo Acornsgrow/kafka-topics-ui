@@ -12,11 +12,11 @@ Browse Kafka topics and understand what's happening on your cluster. Find topics
 ## Running it
 
 ```
-    docker pull landoop/kafka-topics-ui
-    docker run --rm -it -p 8000:8000 \
+    docker pull acornsgrow/kafka-topics-ui
+    docker run --rm -it -p 8021:8021 \
                -e "KAFKA_REST_PROXY_URL=http://kafka-rest-proxy-host:port" \
                -e "PROXY=true" \
-               landoop/kafka-topics-ui
+               acornsgrow/kafka-topics-ui
 ```
 
 **Config:** If you don't use our docker image, keep in mind that `Kafka-REST-Proxy`
@@ -137,7 +137,7 @@ The project is licensed under the [BSL](http://www.landoop.com/bsl) license.
 
 * [schema-registry-ui](https://github.com/Landoop/schema-registry-ui), View, create, evolve and manage your Avro Schemas for multiple Kafka clusters
 * [kafka-connect-ui](https://github.com/Landoop/kafka-connect-ui), Set up and manage connectors for multiple connect clusters
-* [fast-data-dev](https://github.com/Landoop/fast-data-dev), Docker for Kafka developers (schema-registry,kafka-rest,zoo,brokers,landoop) 
+* [fast-data-dev](https://github.com/Landoop/fast-data-dev), Docker for Kafka developers (schema-registry,kafka-rest,zoo,brokers,landoop)
 * [Landoop-On-Cloudera](https://github.com/Landoop/Landoop-On-Cloudera), Install and manage your kafka streaming-platform on you Cloudera CDH cluster
 
 
